@@ -1,0 +1,288 @@
+.header {
+    width: 100vw;
+    height: 110vh;
+    background-color: #ff1302c5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTexts {
+    width: 57vw;
+    height: 100%;
+}
+
+.headerTitle {
+    font-size: 8rem;
+    font-family: 'Anton', sans-serif;
+    padding-left: 3rem;
+    color: white;
+    padding-top: 2.5rem;
+    letter-spacing: 5px;
+    line-height: 8.5rem;
+    overflow: hidden;
+}
+
+.estText {
+    display: inline-block;
+    color: white;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.3rem;
+    padding-top: 2rem;
+}
+
+.secondText {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-style: italic;
+    padding-top: 2rem;
+}
+
+.thirdText {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+.headerImageContainer {
+    width: 42vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerImage {
+    width: 27rem;
+    height: 35rem;
+    background-color: black;
+    transform: rotate(5deg);
+}
+
+/*/ Sliding Text /*/
+
+.slidingTextContainer {
+    width: auto;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.slidingContainer {
+    animation: slide 20s infinite linear;
+    overflow: visible ;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.slidingText {
+    width: auto;
+    color: rgb(118,37,30);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7rem;
+    padding-inline: 0.5rem;
+}
+.slidingIcon {
+    font-size: 1.7rem;
+    padding-inline: 0.5rem;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*/ Sauce Section /*/
+
+.sauceSection {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sauceImageContainer {
+    width: 50vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sauceImage {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.sauceTextContainer {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sauceTitle {
+    font-size: 6rem;
+    font-family: 'Anton', sans-serif;
+    color: #ff1302c5;
+    padding-left: 5rem;
+    line-height: 6.5rem;
+    overflow: hidden;
+}
+
+.sauceDesc {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    padding-inline: 5rem;
+    padding-top: 2rem; 
+}
+
+.sauceBtnContainer {
+    width: calc(100% - 25rem);
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 8.5rem;
+} 
+
+
+
+/*/ Restaurant section /*/
+
+.restaurantSection {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurantTextContainer {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ff1302c5;
+}
+
+.restaurantTitle {
+    font-size: 6rem;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    padding-left: 5rem;
+    line-height: 6.5rem;
+    overflow: hidden;
+}
+
+.restaurantDesc {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    padding-inline: 5rem;
+    padding-top: 2rem; 
+    color: white;
+}
+
+.startingDesc {
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-inline: 5rem;
+    padding-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.restaurantBtnContainer {
+    width: calc(100% - 25rem);
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 9rem;
+} 
+
+.restaurantImageContainer {
+    width: 50vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurantImage {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+/*/ Brand section /*/
+
+.brandSection {
+    width: 100vw;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brandTitle {
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    color: #ff1302c5;
+}
+
+.brandContainer {
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.7rem;
+    padding-bottom: 1.5rem;
+}
+
+.brand {
+    font-size: 1.5rem;
+    color:#ff1302c5;
+}
+
+.brand:nth-child(2) {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.brand:nth-child(3) {
+    font-style: italic;
+}
+
+.brand:nth-child(4) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand:nth-child(6) {
+    font-family: 'Anton', sans-serif;
+}
