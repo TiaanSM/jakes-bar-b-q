@@ -93,6 +93,22 @@
     box-shadow:0 0 0 0;
 }
 
+@media (max-width: 950px) {
+    .button, .buttonDark {
+        margin: auto 0.4rem;
+        padding: 0.7rem 1.5rem;
+        line-height: 30px;
+        font-size: 1rem;
+        border-radius: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .button {
+        display: none;
+    }
+}
+
 /*/ Navbar  #ff1302c5 /*/
 
 .nav {
@@ -154,6 +170,36 @@
     font-family: 'Anton', sans-serif;
 }
 
+@media (max-width: 1050px) {
+    .contentContainer {
+        width: calc(100vw - 3rem);
+    }
+    .buttonContainer {
+        width: 17rem;
+    }
+    .navLink {
+        padding-inline: 0.6rem;
+    }
+    .logoContainer {
+        width: 12rem;
+    }
+    .navCartContainer {
+        width: 3.4rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .buttonContainer {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .linkContainer {
+        display: none;
+    }
+}
 
 /*/ Footer #762824 /*/
 

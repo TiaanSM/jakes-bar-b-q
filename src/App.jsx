@@ -10,12 +10,12 @@ import Visit from './pages/Visit';
 
 function App() {
   
-  //<Button text="SHOP SAUCES" />
+  // button display none props selection. restaurant?
 
   return (
     <div className="App">
       <Navbar />
-      <Visit />
+      <Home />
       <Footer />
     </div>
   )

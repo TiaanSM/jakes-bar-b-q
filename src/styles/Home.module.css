@@ -69,6 +69,44 @@
     margin-right: 2rem;
 }
 
+@media (max-width: 800px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+    }
+    .headerTexts {
+        width: 100vw;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .headerTitle {
+        font-size: 5rem;
+        padding-inline: 2.5rem;
+        padding-top: 2.5rem;
+        letter-spacing: 2px;
+        line-height: 5.5rem;
+    }
+    .estText {
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.7rem;
+        padding-top: 2rem;
+    }
+    .secondText {
+        padding-inline: 2.5rem;
+        font-size: 1.3rem;
+    }
+    .thirdText {
+        padding-left: 2.5rem;
+        font-size: 1.1rem;
+    }
+    .headerImageContainer {
+        width: 100vw;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+}
+
 /*/ Sliding Text /*/
 
 .slidingTextContainer {
@@ -123,6 +161,18 @@
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 800px) {
+    .slidingTextContainer, .slidingTextContainer2 {
+        height: 4rem;
+    }
+    .slidingText, .slidingText2 {
+        font-size: 1.3rem;
+    }
+    .slidingIcon {
+        font-size: 1.3rem;
     }
 }
 
@@ -185,6 +235,42 @@
     position: relative;
     right: 8.5rem;
 } 
+
+@media (max-width: 800px) {
+    .sauceSection {
+        height: auto;
+        flex-direction: column;
+        background-color: #f6eee3;
+    }
+    .sauceImageContainer {
+        width: calc(100vw - 8rem);
+        height: 100vh;
+        padding-top: 3rem;
+    }
+    .sauceTextContainer {
+        width: 100vw;
+        position: relative;
+    }
+    .sauceTitle {
+        font-size: 3.5rem;
+        padding-inline: 4rem;
+        line-height: 4rem;
+        padding-top: 2rem;
+    }
+    .sauceDesc {
+        font-size: 1.1rem;
+        padding-inline: 4rem;
+        padding-bottom: 10rem;
+    }
+    .sauceBtnContainer {
+        width: 200px;
+        height: 9rem;
+        justify-content: center;
+        position: absolute;
+        left: 2.5rem;
+        bottom: 2rem;
+    } 
+}
 
 /*/ Restaurant section /*/
 
@@ -256,6 +342,44 @@
     background-color: black;
 }
 
+@media (max-width: 800px) {
+    .restaurantSection {
+        height: auto;
+        flex-direction: column;
+        background-color: #ff1302c5;
+    }
+    .restaurantImageContainer {
+        width: calc(100vw - 8rem);
+        height: 100vh;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .restaurantTextContainer {
+        width: 100vw;
+        position: relative;
+        height: 70vh;
+    }
+    .restaurantTitle {
+        font-size: 3.5rem;
+        padding-inline: 4rem;
+        line-height: 4rem;
+        padding-top: 2rem;
+    }
+    .restaurantDesc {
+        font-size: 1.1rem;
+        padding-inline: 4rem;
+        padding-bottom: 2rem;
+    }
+    .restaurantBtnContainer {
+        width: 200px;
+        height: 9rem;
+        justify-content: center;
+        position: absolute;
+        left: 2.5rem;
+        bottom: 2rem;
+    } 
+}
+
 /*/ Brand section /*/
 
 .brandSection {
@@ -304,6 +428,30 @@
 
 .brand:nth-child(6) {
     font-family: 'Anton', sans-serif;
+}
+
+
+@media (max-width: 800px) {
+    .brandSection {
+        height: auto;
+    }
+    .brandContainer {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+    .brandTitle {
+        font-size: 1.3rem;
+        padding-top: 2rem;
+    }
+    .brand {
+        font-size: 2.5rem;
+        color:#ff1302c5;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
 
