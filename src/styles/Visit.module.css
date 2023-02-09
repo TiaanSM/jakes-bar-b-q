@@ -1,0 +1,35 @@
+.visitSection {
+    width: 100vw;
+    height: auto;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff1302c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    width: 30vw;
+    height: 100%;
+}
+
+.title {
+    font-size: 9rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color: #f6eee3;
+}
+
+.imageContainer {
+    width: 30vw;
+    height: 100%;
+}
+
+.vendingContainer {
+    width: 100vw;
+    height: 100vh;
+}

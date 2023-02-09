@@ -1,10 +1,12 @@
 import './App.css'
 
-import Button from './components/Button';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
+import Menu from './pages/Menu';
+import OurRoots from './pages/OurRoots';
+import Visit from './pages/Visit';
 
 function App() {
   
@@ -13,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      <Visit />
       <Footer />
     </div>
   )

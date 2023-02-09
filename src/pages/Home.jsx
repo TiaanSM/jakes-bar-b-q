@@ -52,7 +52,7 @@ const Home = () => {
           <h2 className={styles.sauceTitle}>THE MAGIC OF JAKES BBQ IN YOUR HOME</h2>
           <p className={styles.sauceDesc}>The Jakes family has made their sauce from scratch daily for over 50 years. For the first time ever, you can bring that flavor to a grill near you.</p>
           <div className={styles.sauceBtnContainer}>
-            <Button text="SHOP OUR SAUCES" />
+            <Button text="SHOP OUR SAUCES" buttonDark={true} />
           </div>
         </div>
 
@@ -102,7 +102,7 @@ const Home = () => {
         <img src="" alt="" className={styles.storyImage2} />
         <p className={styles.storyDesc}>For sisters Deborah “Little” and Mary “Shorty” Jones, barbeque is a way of life. When they were little girls, their father, Leavy B. Jones Sr., set them up on milk crates to look over the pit at the very first Jones Bar-B-Q restaurant.</p>
         <div className={styles.storyBtnContainer}>
-          <Button text="READ THEIR STORY" />
+          <Button text="READ THEIR STORY" buttonDark={true} />
         </div>
       </div>  
 
