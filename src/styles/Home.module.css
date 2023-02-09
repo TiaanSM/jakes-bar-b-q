@@ -17,7 +17,7 @@
     font-size: 8rem;
     font-family: 'Anton', sans-serif;
     padding-left: 3rem;
-    color: white;
+    color: #f6eee3;
     padding-top: 2.5rem;
     letter-spacing: 5px;
     line-height: 8.5rem;
@@ -26,7 +26,7 @@
 
 .estText {
     display: inline-block;
-    color: white;
+    color: #f6eee3;
     padding-left: 3rem;
     padding-top: 2rem;
     font-family: 'Anton', sans-serif;
@@ -35,7 +35,7 @@
 }
 
 .secondText {
-    color: white;
+    color: #f6eee3;
     font-family: 'Roboto Condensed', sans-serif;
     padding-left: 3rem;
     font-weight: 500;
@@ -45,7 +45,7 @@
 }
 
 .thirdText {
-    color: white;
+    color: #f6eee3;
     font-family: 'Roboto Condensed', sans-serif;
     padding-left: 3rem;
     font-weight: 500;
@@ -62,10 +62,11 @@
 }
 
 .headerImage {
-    width: 27rem;
+    width: 30rem;
     height: 35rem;
     background-color: black;
     transform: rotate(5deg);
+    margin-right: 2rem;
 }
 
 /*/ Sliding Text /*/
@@ -77,6 +78,15 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+.slidingTextContainer2 {
+    width: auto;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118,37,30);
 }
 
 .slidingContainer {
@@ -93,6 +103,15 @@
     font-size: 1.7rem;
     padding-inline: 0.5rem;
 }
+
+.slidingText2 {
+    width: auto;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7rem;
+    padding-inline: 0.5rem;
+}
+
 .slidingIcon {
     font-size: 1.7rem;
     padding-inline: 0.5rem;
@@ -138,6 +157,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #f6eee3;
 }
 
 .sauceTitle {
@@ -166,8 +186,6 @@
     right: 8.5rem;
 } 
 
-
-
 /*/ Restaurant section /*/
 
 .restaurantSection {
@@ -191,7 +209,7 @@
 .restaurantTitle {
     font-size: 6rem;
     font-family: 'Anton', sans-serif;
-    color: white;
+    color: #f6eee3;
     padding-left: 5rem;
     line-height: 6.5rem;
     overflow: hidden;
@@ -202,11 +220,11 @@
     font-family: sans-serif;
     padding-inline: 5rem;
     padding-top: 2rem; 
-    color: white;
+    color: #f6eee3;
 }
 
 .startingDesc {
-    color: white;
+    color: #f6eee3;
     font-family: sans-serif;
     font-style: italic;
     padding-inline: 5rem;
@@ -263,6 +281,7 @@
     align-items: center;
     padding-top: 2.7rem;
     padding-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 .brand {
@@ -285,4 +304,161 @@
 
 .brand:nth-child(6) {
     font-family: 'Anton', sans-serif;
+}
+
+
+.bigTextContainer {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6eee3;
+}
+
+.bigText {
+    font-size: 8rem;
+    padding-inline: 4rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color:#ff1302c5;
+    line-height: 8.5rem;
+    overflow: hidden;
+}
+
+.bigDesc {
+    font-family: 'Anton', sans-serif;
+    color:#ff1302c5;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+/*/ Story section /*/
+
+.storySection {
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6eee3;
+}
+
+.storyImageContainer {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyImage1 {
+    width: 40vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.storyContentContainer {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.storyImage2 {
+    width: 40vw;
+    height: 60vh;
+    background-color: black;
+}
+
+.storyDesc {
+    padding-inline: 4.3rem;
+    padding-top: 5rem;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+}
+
+.storyBtnContainer {
+    width: calc(100% - 25rem);
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 9rem;
+}
+
+/*/ Contact Section /*/
+
+.contactSection {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ff1302c5;
+}
+
+.contactTextContainer {
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.contactTitle {
+    font-size: 10rem;
+    font-family: 'Anton', sans-serif;
+    line-height: 10.5rem;
+    overflow: hidden;
+    text-align: center;
+    color: #f6eee3;
+    letter-spacing: 5px;
+}
+
+.contactDesc {
+    color: #f6eee3;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    padding-inline: 4rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.emailContainer {
+    width: 100vw;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 1.4rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    border: none;
+}
+
+.input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.submit {
+    padding: 1.3rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.1rem;
+    position: relative;
+    left: 1rem;
+    font-family: 'Anton', sans-serif;
+    color: #ff1302c5;
+    cursor: pointer;
 }

@@ -87,6 +87,57 @@ const Home = () => {
 
       </section>
 
+      <div className={styles.bigTextContainer}>
+        <h4 className={styles.bigText}>"THE BEST ATTITUDE IS GRATITUDE"</h4>
+        <span className={styles.bigDesc}>- JAKES BBQ</span>
+      </div>
+
+      <section className={styles.storySection}>
+
+      <div className={styles.storyImageContainer}>
+        <img src="" alt="" className={styles.storyImage1} />
+      </div>
+          
+      <div className={styles.storyContentContainer}>
+        <img src="" alt="" className={styles.storyImage2} />
+        <p className={styles.storyDesc}>For sisters Deborah “Little” and Mary “Shorty” Jones, barbeque is a way of life. When they were little girls, their father, Leavy B. Jones Sr., set them up on milk crates to look over the pit at the very first Jones Bar-B-Q restaurant.</p>
+        <div className={styles.storyBtnContainer}>
+          <Button text="READ THEIR STORY" />
+        </div>
+      </div>  
+
+      </section>
+
+      <div className={styles.slidingTextContainer2}>
+        <div className={styles.slidingContainer}>
+          <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
+          <span className={styles.slidingIcon}>🔥</span>
+          <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
+          <span className={styles.slidingIcon}>🔥</span>
+          <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
+          <span className={styles.slidingIcon}>🔥</span>
+          <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
+          <span className={styles.slidingIcon}>🔥</span>
+          <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
+          <span className={styles.slidingIcon}>🔥</span>
+          <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
+        </div>
+      </div>
+
+      <section className={styles.contactSection}>
+
+        <div className={styles.contactTextContainer}>
+          <h4 className={styles.contactTitle}>STAY IN THE KNOW</h4>
+          <p className={styles.contactDesc}>Enter your email address to recieve news and updates from Jakes Bar-B-Q.</p>
+        </div>
+
+        <div className={styles.emailContainer}>
+          <input type="email" placeholder='Email Address' className={styles.input}/>
+          <button type='submit' className={styles.submit}>SUBMIT</button>
+        </div>
+
+      </section>
+
     </main>
   )
 }
