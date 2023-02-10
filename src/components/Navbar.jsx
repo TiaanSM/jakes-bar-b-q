@@ -21,7 +21,9 @@ const Navbar = () => {
                   <CartSVG />
                   <span className={styles.cartAmount}>0</span>
                 </span>
-                <Button text="SHOP SAUCES" />
+                <span className={styles.navBtnContainer}>
+                  <Button text="SHOP SAUCES" />
+                </span>
             </div>
         </div>
     </nav>
