@@ -39,6 +39,7 @@
     letter-spacing: 2px;
     padding-top: 6rem;
     padding-bottom: 3rem;
+    font-weight: 500;
 }
 
 .container {
@@ -51,6 +52,7 @@
     font-size: 2rem;
     letter-spacing: 2px;
     padding-bottom: 1rem;
+    font-weight: 500;
 }
 
 .itemDesc {
@@ -58,6 +60,7 @@
     font-family: sans-serif;
     font-size: 1.1rem;
     padding-bottom: 1rem;
+    padding-inline: 2rem;
 }
 
 .itemPrice {
@@ -66,4 +69,34 @@
     font-size: 1.2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .mainTitle {
+        font-size: 4rem;
+    }
+    .itemTitle {
+        font-size: 2.8rem;
+    }
+    .item {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainTitle {
+        font-size: 2.5rem;
+        padding-top: 2rem;
+    }
+    .itemTitle {
+        font-size: 2.3rem;
+        padding-inline: 2rem;
+    }
+    .item {
+        font-size: 1.5rem;
+        padding-inline: 2rem;
+    }
+    .itemDesc {
+        font-size: 1rem;
+    }
 }

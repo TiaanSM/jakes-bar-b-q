@@ -39,3 +39,35 @@
     font-size: 1.2rem;
     line-height: 1.7rem;
 }
+
+@media (max-width: 1000px) {
+    .textContainer {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .textContainer {
+        width: 100vw;
+        padding-inline: 5rem;
+        padding-bottom: 6rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .textContainer {
+        padding-inline: 3rem;
+    }
+    .title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .textContainer {
+        padding-inline: 2rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+}
