@@ -14,11 +14,11 @@ const Footer = () => {
             <div className={styles.column}>
                 <span className={styles.heading}>VISIT US</span>
                 <ul className={styles.fLinkContainer}>
-                  <li className={styles.c1Link}>6706 Kaw Drive <br/>Kansas City, KS 66111</li>
-                  <li className={styles.c1Link}>(913) 788-5005</li>
+                  <li className={styles.c1Link}>230 Can Drive <br/>QHEBERHA, EC 2660</li>
+                  <li className={styles.c1Link}>+27 123 456 7890</li>
                   <li className={styles.c1Link}>Questions? Call </li>
-                  <li className={styles.c1Link}>855-752-7BBQ</li>
-                  <li className={styles.c1Link}>(855-752-7227)</li>
+                  <li className={styles.c1Link}>765-432-1BBQ</li>
+                  <li className={styles.c1Link}>+27 098 765 4321</li>
                 </ul>
             </div>
 
@@ -33,8 +33,8 @@ const Footer = () => {
             <div className={styles.column}>
               <span className={styles.heading}>KEEP IN TOUCH</span>
               <ul className={styles.fLinkContainer}>
-                <li className={styles.c3Link}>Follow us on <a>Instagram</a></li>
-                <li className={styles.c3Link}>Like us on <a>Facebook</a></li>
+                <li className={styles.c3Link}>Follow us on <a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li className={styles.c3Link}>Like us on <a href="https://facebook.com">Facebook</a></li>
               </ul>
             </div>
 

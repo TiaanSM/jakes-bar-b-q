@@ -8,9 +8,9 @@ const Visit = () => {
         <div className={styles.textContainer}>
             <h1 className={styles.title}>VISIT</h1>
             <h2 className={styles.location}>
-              6706 KAW DRIVE<br/>
-              KANSAS CITY, KS 66111<br/>
-              (913) 788-5005
+              230 CAN DRIVE<br/>
+              QHEBERHA, EC 2660<br/>
+              +27 123 456 7890
             </h2>
             <h3 className={styles.openTime}>
               THURSDAY - SATURDAY<br/>

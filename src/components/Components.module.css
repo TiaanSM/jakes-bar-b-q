@@ -172,6 +172,15 @@
     align-items: center;
 }
 
+.btnLink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 @media (max-width: 1050px) {
     .contentContainer {
         width: calc(100vw - 3rem);
@@ -208,8 +217,11 @@
     .linkContainer {
         display: none;
     }
+    .buttonContainer {
+        width: 8rem;
+    }
     .navBtnContainer {
-        display: none;
+        width: 3rem;
     }
 }
 
@@ -288,6 +300,10 @@
 .FlogoContainer {
     padding-left: 3rem;
     padding-top: 3rem;
+}
+
+.c3Link > a {
+    color: white;
 }
 
 @media (max-width: 800px) {

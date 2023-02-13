@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
         <div className={styles.headerTexts}>
           <h1 className={styles.headerTitle}>SAUCE MADE WITH LOVE IN QHEBERHA</h1>
           <span className={styles.estText}>SINCE 1970... SOMETHING.</span>
-          <p className={styles.secondText}>RESTAURANT IS STILL OPEN, WITH JAKES AND PIETER STILL IN CHARGE! COME SEE US.</p>
+          <p className={styles.secondText}>RESTAURANT IS STILL OPEN, WITH JOHN AND JACO STILL IN CHARGE! COME SEE US.</p>
           <p className={styles.thirdText}>Serving new HOT BBQ Sauce now. Give it a try!</p>
         </div>
 
@@ -51,9 +52,9 @@ const Home = () => {
         <div className={styles.sauceTextContainer}>
           <h2 className={styles.sauceTitle}>THE MAGIC OF JAKES BBQ IN YOUR HOME</h2>
           <p className={styles.sauceDesc}>The Jakes family has made their sauce from scratch daily for over 50 years. For the first time ever, you can bring that flavor to a grill near you.</p>
-          <div className={styles.sauceBtnContainer}>
+          <Link to="/Shop" className={styles.sauceBtnContainer}>
             <Button text="SHOP OUR SAUCES" buttonDark={true} />
-          </div>
+          </Link>
         </div>
 
       </section>
@@ -74,11 +75,11 @@ const Home = () => {
 
         <div className={styles.restaurantTextContainer}>
           <h2 className={styles.restaurantTitle}>STOP BY OUR RESTAURANT</h2>
-          <p className={styles.restaurantDesc}>From housemade sausages to racks of ribs, we love to feed our Kansas City community. So come join the party… and come hungry! <br/><br/> PLEASE KNOW JONES BAR-B-Q RESTAURANT IS STILL OPEN WITH THE SHORTY AND LITTLE SISTERS RUNNING IT!  WE WOULD LOVE TO SEE YOU.</p>
+          <p className={styles.restaurantDesc}>From housemade sausages to racks of ribs, we love to feed our Qheberha City community. So come join the party… and come hungry! <br/><br/> PLEASE KNOW JAKES BAR-B-Q RESTAURANT IS STILL OPEN WITH THE BIGGY AND LITTLE BROTHERS RUNNING IT! WE WOULD LOVE TO SEE YOU.</p>
           <p className={styles.startingDesc}>Starting in October 2022 we will have a new Hot BBQ sauce to check out.</p>
-          <div className={styles.restaurantBtnContainer}>
+          <Link to="/Menu" className={styles.restaurantBtnContainer}>
             <Button text="VIEW OUR MENU" />
-          </div>
+          </Link>
         </div>
 
         <div className={styles.restaurantImageContainer}>
@@ -100,16 +101,16 @@ const Home = () => {
           
       <div className={styles.storyContentContainer}>
         <img src="" alt="" className={styles.storyImage2} />
-        <p className={styles.storyDesc}>For sisters Deborah “Little” and Mary “Shorty” Jones, barbeque is a way of life. When they were little girls, their father, Leavy B. Jones Sr., set them up on milk crates to look over the pit at the very first Jones Bar-B-Q restaurant.</p>
-        <div className={styles.storyBtnContainer}>
+        <p className={styles.storyDesc}>For brothers John “Biggy” and Jaco “Jacobus” Bones, barbeque is a way of life. When they were little boys, their father, Jakes C. Bones Sr., set them up on milk crates to look over the pit at the very first Jakes Bar-B-Q restaurant.</p>
+        <Link to="/OurRoots" className={styles.storyBtnContainer}>
           <Button text="READ THEIR STORY" buttonDark={true} />
-        </div>
+        </Link>
       </div>  
 
       </section>
 
       <div className={styles.slidingTextContainer2}>
-        <div className={styles.slidingContainer}>
+        <a href="https://instagram.com" target="_blank" className={styles.slidingContainer}>
           <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
           <span className={styles.slidingIcon}>🔥</span>
           <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
@@ -121,7 +122,7 @@ const Home = () => {
           <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
           <span className={styles.slidingIcon}>🔥</span>
           <span className={styles.slidingText2}>FOLLOW US ON INSTAGRAM @ JAKESBBQ</span>
-        </div>
+        </a>
       </div>
 
       <section className={styles.contactSection}>

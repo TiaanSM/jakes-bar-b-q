@@ -163,6 +163,7 @@
     overflow: visible ;
     white-space: nowrap;
     align-items: center;
+    text-decoration: none;
 }
 
 .slidingText {
@@ -271,6 +272,7 @@
     align-items: center;
     position: relative;
     right: 8.5rem;
+    text-decoration: none;
 } 
 
 @media (max-width: 800px) {
@@ -383,6 +385,7 @@
     align-items: center;
     position: relative;
     right: 9rem;
+    text-decoration: none;
 } 
 
 .restaurantImageContainer {
@@ -672,6 +675,7 @@
     align-items: center;
     position: relative;
     right: 9rem;
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
