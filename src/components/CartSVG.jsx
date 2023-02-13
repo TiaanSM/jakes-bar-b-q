@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CartSVG = () => {
+const CartSVG = (props) => {
   return (
     <div>
-        <svg width="40px" height="40px" viewBox="0 0 1024 1024" fill="#ffffff" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+        <svg width="40px" height="40px" viewBox="0 0 1024 1024" fill={props.color} class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
 
         <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 

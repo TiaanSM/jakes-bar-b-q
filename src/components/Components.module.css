@@ -114,6 +114,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 40;
 }
 
 .contentContainer {
@@ -130,6 +131,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 60;
 }
 
 .navLink {
@@ -170,6 +172,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 60;
 }
 
 .btnLink {
@@ -236,6 +239,74 @@
     .navCartContainer {
         display: none;
     }
+}
+
+.openMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #f3f2ee;
+    transform: translateX(0vw);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.closedMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #f3f2ee;
+    transform: translateX(100vw);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+}
+
+.menuLink {
+    text-decoration: none;
+    padding-inline: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #ff1302c5;
+    font-family: 'Anton', sans-serif;
+}
+
+.menuLink:nth-child(1) {
+    padding-top: 4rem;
+}
+
+.menuCartContainer {
+    width: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 2.5rem;
+}
+
+.menuCartAmount {
+    font-size: 1.6rem;
+    color: #ff1302c5;
+    font-family: 'Anton', sans-serif;
 }
 
 /*/ Footer #762824 /*/

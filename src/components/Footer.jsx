@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
 
         <div className={styles.FlogoContainer}>
-          <Logo />
+          <Logo color="white" />
         </div>
 
         <div className={styles.footerContent}>

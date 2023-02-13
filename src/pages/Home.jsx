@@ -1,6 +1,8 @@
 import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
+import headerImage from '../assets/header.jpg';
+import restuarantImage from '../assets/restuarant.jpg';
 
 const Home = () => {
   return (
@@ -16,7 +18,7 @@ const Home = () => {
         </div>
 
         <div className={styles.headerImageContainer}>
-          <img src="" alt="" className={styles.headerImage}/>
+          <img src={headerImage} alt="" className={styles.headerImage}/>
         </div>
 
       </header>
@@ -83,7 +85,7 @@ const Home = () => {
         </div>
 
         <div className={styles.restaurantImageContainer}>
-          <img src="" alt="" className={styles.restaurantImage} />
+          <img src={restuarantImage} alt="" className={styles.restaurantImage} />
         </div>
 
       </section>

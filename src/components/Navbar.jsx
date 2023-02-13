@@ -11,11 +11,14 @@ const Navbar = () => {
   const isMobile = window.innerWidth < 800;
   const [isOpen, setOpen] = useState(false);
 
+  // red logo
+
   return (
+
     <nav className={styles.nav}>
         <div className={styles.contentContainer}>
             <Link to="/" className={styles.logoContainer}>
-                <Logo />
+                <Logo color={isOpen ? "#ff1302c5" : 'white'} />
             </Link>
             <div className={styles.linkContainer}>
               <Link to="/Shop" className={styles.navLink}>SHOP</Link>
@@ -25,16 +28,30 @@ const Navbar = () => {
             </div>
             <div className={styles.buttonContainer}>
                 <span className={styles.navCartContainer}>
-                  <CartSVG />
+                  <CartSVG color="white" />
                   <span className={styles.cartAmount}>0</span>
                 </span>
                 <span className={styles.navBtnContainer}>
-                  {isMobile ? <Hamburger toggled={isOpen} toggle={setOpen} size={32} duration={0.3} easing="ease" color="white"/> 
+                  {isMobile ? <Hamburger toggled={isOpen} toggle={setOpen} size={32} duration={0.4} easing="ease" color={isOpen ? "#ff1302c5" : "white"}/> 
                   : <Link to="/Shop" className={styles.btnLink}><Button text="SHOP SAUCES" /></Link>}
                 </span>
             </div>
         </div>
+
+        <div className={isOpen ? styles.openMenu : styles.closedMenu}>
+          <div className={styles.menuContainer}>
+            <Link to="/Shop" className={styles.menuLink}>SHOP</Link>
+            <Link to="/Menu" className={styles.menuLink}>MENU</Link>
+            <Link to="/OurRoots" className={styles.menuLink}>OUR ROOTS</Link>
+            <Link to="/Visit" className={styles.menuLink}>VISIT</Link>
+              <span className={styles.menuCartContainer}>
+                <CartSVG color="#ff1302c5" />
+                <span className={styles.menuCartAmount}>0</span>
+              </span>
+          </div>
+        </div>
     </nav>
+  
   )
 }
 
