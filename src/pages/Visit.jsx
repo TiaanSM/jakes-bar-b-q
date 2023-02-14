@@ -23,18 +23,19 @@ const Visit = () => {
         </div>
 
         <div className={styles.imageContainer}>
-           <img src="" alt="" className={styles.textImage} />
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=qheberha&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
         </div>
       </div>
 
       <div className={styles.vendingContainer}>
         <div className={styles.imageContainer2}>
-            <img src="" alt="" className={styles.vendorImage} />
+            <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1000/pexels-rezwan-nobi-7262370.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373635463" 
+            alt="meat-platter" className={styles.vendorImage} />
         </div>
         <div className={styles.vendorTextContainer}>
             <h5 className={styles.vendorTitle}>24/7 VENDING MACHINE</h5>
             <p className={styles.vendorDesc}>
-                Got a craving after hours? Need a bottle of sauce stat? Our Kaw Drive vending machine is open 24/7 for all of your Jones Bar-B-Q needs.
+                Got a craving after hours? Need a bottle of sauce stat? Our Can Drive vending machine is open 24/7 for all of your Jakes Bar-B-Q needs.
             </p>
         </div>
       </div>
@@ -44,3 +45,7 @@ const Visit = () => {
 }
 
 export default Visit
+
+/*
+<img src="" alt="" className={styles.textImage} />
+*/

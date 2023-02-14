@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #ff1302c5;
+    background-color: #ff4339;
 }
 
 .heading {
@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 10rem;
 }
 
 .title {

@@ -1,12 +1,10 @@
 import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
-import headerImage from '../assets/header.jpg';
-import restuarantImage from '../assets/restuarant.jpg';
 
 const Home = () => {
   return (
-    <main>
+    <main className={styles.home}>
 
       <header className={styles.header}>
 
@@ -18,7 +16,8 @@ const Home = () => {
         </div>
 
         <div className={styles.headerImageContainer}>
-          <img src={headerImage} alt="" className={styles.headerImage}/>
+          <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1000/BBQ_Website/pexels-gustavo-peres-9200388.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373640419"
+          alt="bbq-meat-platter" className={styles.headerImage}/>
         </div>
 
       </header>
@@ -48,7 +47,8 @@ const Home = () => {
       <section className={styles.sauceSection}>
 
         <div className={styles.sauceImageContainer}>
-          <img src="" alt="" className={styles.sauceImage} />
+          <img src="https://ik.imagekit.io/x29dtqzji/tr:w-1100/BBQ_Website/pexels-valeria-boltneva-13717455.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373635719" 
+          alt="bbq-sauce-meat" className={styles.sauceImage} />
         </div>
 
         <div className={styles.sauceTextContainer}>
@@ -85,7 +85,8 @@ const Home = () => {
         </div>
 
         <div className={styles.restaurantImageContainer}>
-          <img src={restuarantImage} alt="" className={styles.restaurantImage} />
+          <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1100/pexels-valeria-boltneva-8862711.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373635781" 
+          alt="bbq-meat-plate" className={styles.restaurantImage} />
         </div>
 
       </section>
@@ -98,11 +99,13 @@ const Home = () => {
       <section className={styles.storySection}>
 
       <div className={styles.storyImageContainer}>
-        <img src="" alt="" className={styles.storyImage1} />
+        <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1000/pexels-cottonbro-studio-4252137.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373635834" 
+        alt="chef-owner" className={styles.storyImage1} />
       </div>
           
       <div className={styles.storyContentContainer}>
-        <img src="" alt="" className={styles.storyImage2} />
+        <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1000/pexels-cottonbro-studio-4253312.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373635636" 
+        alt="chefs-brothers" className={styles.storyImage2} />
         <p className={styles.storyDesc}>For brothers John “Biggy” and Jaco “Jacobus” Bones, barbeque is a way of life. When they were little boys, their father, Jakes C. Bones Sr., set them up on milk crates to look over the pit at the very first Jakes Bar-B-Q restaurant.</p>
         <Link to="/OurRoots" className={styles.storyBtnContainer}>
           <Button text="READ THEIR STORY" buttonDark={true} />

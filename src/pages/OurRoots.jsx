@@ -3,7 +3,8 @@ import styles from '../styles/OurRoots.module.css';
 const OurRoots = () => {
   return (
     <section className={styles.outRootsSection}>
-        <img src="" alt="" className={styles.image} />
+        <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/jason-briscoe-hsrnbwfQXw0-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373637330" 
+        alt="fire-wood-start" className={styles.image} />
         <div className={styles.mainContainer}>
             <div className={styles.textContainer}>
                 <h2 className={styles.title}>OUR ROOTS</h2>
@@ -30,7 +31,8 @@ const OurRoots = () => {
                 </p>
             </div>
         </div>
-        <img src="" alt="" className={styles.image} />
+        <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1700/matt-benson-FlFHtBtVIQ8-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373634206" 
+        alt="bbq-smoke-house" className={styles.image} />
     </section>
   )
 }

@@ -4,7 +4,8 @@ const Menu = () => {
     return (
         <section className={styles.menuSection}>
 
-            <img src="" alt="" className={styles.image} />
+            <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/pexels-calvin-lee-9967252.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373638381" 
+            alt="meaty-bbq-plate" className={styles.image} />
 
             <div className={styles.mainContainer}>
 
@@ -149,7 +150,8 @@ const Menu = () => {
                         <p className={styles.itemPrice}>Bottle R30</p>
                     </div>
                 </div>
-                <img src="" alt="" className={styles.image} />
+                <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/pexels-saveurs-secretes-5987010.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373635591" 
+                alt="" className={styles.image} />
             </div>
 
         </section>

@@ -3,7 +3,7 @@ import Button from './Button';
 import CartSVG from './CartSVG';
 import Logo from './Logo';
 import { Turn as Hamburger } from 'hamburger-react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -11,14 +11,53 @@ const Navbar = () => {
   const isMobile = window.innerWidth < 800;
   const [isOpen, setOpen] = useState(false);
 
-  // red logo
+  // 
+
+  let oldScrollY = 0;
+
+  const [direction, setDirection] = useState('up');
+
+  const controlDirection = () => {
+    if(window.scrollY > oldScrollY) {
+        setDirection('down');
+    } else {
+        setDirection('up');
+    }
+    oldScrollY = window.scrollY;
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlDirection);
+    return () => {
+        window.removeEventListener('scroll', controlDirection);
+    };
+  },[]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlDirection);
+
+    return () => window.removeEventListener('scroll', controlDirection);
+
+  }, []);
+
+  const navStyles = {
+    width: '100vw',
+    height: '10rem',
+    backgroundColor: '#ff4339',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'fixed',
+    zIndex: '40',
+    transition: 'top 0.6s ease'
+  }
 
   return (
 
-    <nav className={styles.nav}>
+    <nav style={{...navStyles, top: direction === 'up' ? '0' : '-10rem' }}>
         <div className={styles.contentContainer}>
             <Link to="/" className={styles.logoContainer}>
-                <Logo color={isOpen ? "#ff1302c5" : 'white'} />
+                <Logo color={isOpen ? "#ff4339" : 'white'} />
             </Link>
             <div className={styles.linkContainer}>
               <Link to="/Shop" className={styles.navLink}>SHOP</Link>
