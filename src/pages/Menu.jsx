@@ -1,7 +1,10 @@
 import styles from '../styles/Menu.module.css';
+import Navbar from '../components/Navbar';
 
 const Menu = () => {
     return (
+    <>
+    <Navbar />
         <section className={styles.menuSection}>
 
             <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/pexels-calvin-lee-9967252.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373638381" 
@@ -155,6 +158,7 @@ const Menu = () => {
             </div>
 
         </section>
+    </>
     )
 }
 

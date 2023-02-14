@@ -1,7 +1,10 @@
 import styles from '../styles/Visit.module.css';
+import Navbar from '../components/Navbar';
 
 const Visit = () => {
   return (
+    <>
+    <Navbar />
     <section className={styles.visitSection}>
 
       <div className={styles.mainContainer}>
@@ -41,11 +44,10 @@ const Visit = () => {
       </div>
 
     </section>
+
+    </>
   )
 }
 
 export default Visit
 
-/*
-<img src="" alt="" className={styles.textImage} />
-*/

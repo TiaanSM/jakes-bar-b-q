@@ -1,7 +1,10 @@
 import styles from '../styles/OurRoots.module.css';
+import Navbar from '../components/Navbar';
 
 const OurRoots = () => {
   return (
+    <>
+    <Navbar />
     <section className={styles.outRootsSection}>
         <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/jason-briscoe-hsrnbwfQXw0-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373637330" 
         alt="fire-wood-start" className={styles.image} />
@@ -34,6 +37,7 @@ const OurRoots = () => {
         <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1700/matt-benson-FlFHtBtVIQ8-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373634206" 
         alt="bbq-smoke-house" className={styles.image} />
     </section>
+    </>
   )
 }
 

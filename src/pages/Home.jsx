@@ -1,9 +1,12 @@
 import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
+    <>
+    <Navbar />
     <main className={styles.home}>
 
       <header className={styles.header}>
@@ -145,6 +148,7 @@ const Home = () => {
       </section>
 
     </main>
+    </>
   )
 }
 
