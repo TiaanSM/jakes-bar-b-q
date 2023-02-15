@@ -1,28 +1,30 @@
 import './App.css'
-
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import {Routes, Route} from 'react-router-dom'
+import { lazy , Suspense } from 'react';
+
 
 import Home from './pages/Home';
-import Shop from './pages/Shop';
-import Menu from './pages/Menu';
-import OurRoots from './pages/OurRoots';
-import Visit from './pages/Visit';
+const Shop = lazy(() => import('./pages/Shop'));
+const Menu = lazy(() => import('./pages/Menu'));
+const OurRoots = lazy(() => import('./pages/OurRoots'));
+const Visit = lazy(() => import('./pages/Visit'));
 
 function App() {
 
 
   return (
     <div className="App">
-      <Routes>
+      <Suspense>
+        <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Shop" element={<Shop/>} />
           <Route path="/Menu" element={<Menu/>} />
           <Route path="/OurRoots" element={<OurRoots/>} />
           <Route path="/Visit" element={<Visit/>} />
-      </Routes>
+        </Routes>
+      </Suspense>
       <Footer />
     </div>
   )

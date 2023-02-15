@@ -2,11 +2,17 @@ import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import { useEffect } from 'react';
 
 const Home = () => {
+    
+    useEffect(() => {
+      window.scrollTo(0,0);
+    }, []);
+
   return (
-    <>
-    <Navbar />
+  <>
+  <Navbar />
     <main className={styles.home}>
 
       <header className={styles.header}>
@@ -23,7 +29,7 @@ const Home = () => {
           alt="bbq-meat-platter" className={styles.headerImage}/>
         </div>
 
-      </header>
+      </header>         
 
       <div className={styles.slidingTextContainer}>
         <div className={styles.slidingContainer}>

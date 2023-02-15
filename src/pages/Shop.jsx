@@ -1,8 +1,16 @@
 import styles from '../styles/Shop.module.css';
 import Navbar from '../components/Navbar';
 import Products from '../Products';
+import { useEffect } from 'react';
+import PageChange from '../components/PageChange';
 
 const Shop = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
+
   return (
     <>
     <Navbar />

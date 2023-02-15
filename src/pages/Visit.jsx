@@ -1,7 +1,13 @@
 import styles from '../styles/Visit.module.css';
 import Navbar from '../components/Navbar';
+import { useEffect } from 'react';
 
 const Visit = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <>
     <Navbar />

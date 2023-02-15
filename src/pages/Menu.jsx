@@ -1,7 +1,14 @@
 import styles from '../styles/Menu.module.css';
 import Navbar from '../components/Navbar';
+import { useEffect } from 'react';
 
 const Menu = () => {
+
+    useEffect(() => {
+      window.scrollTo(0,0);
+    }, []);
+
+
     return (
     <>
     <Navbar />
