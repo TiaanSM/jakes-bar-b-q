@@ -1,7 +1,7 @@
 .ourRootsSection {
     width: 100vw;
     height: auto;
-    background-color: #ff1302c5;
+    background-color: #ff4339;
 }
 
 .image {
@@ -13,7 +13,7 @@
 }
 
 .mainContainer {
-    background-color: #ff1302c5;
+    background-color: #ff4339;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,9 @@
     width: 60vw;
     padding-inline: 5rem;
     padding-bottom: 6rem;
+}
+.textContainer:nth-child(1) {
+    padding-top: 3rem;
 }
 
 .title {
@@ -53,6 +56,9 @@
         width: 100vw;
         padding-inline: 5rem;
         padding-bottom: 6rem;
+    }
+    .textContainer:nth-child(1) {
+        padding-top: 3rem;
     }
 }
 

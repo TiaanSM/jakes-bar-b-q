@@ -6,7 +6,7 @@ import { Turn as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const isMobile = window.innerWidth < 800;
   const [isOpen, setOpen] = useState(false);
@@ -60,10 +60,10 @@ const Navbar = () => {
                 <Logo color={isOpen ? "#ff4339" : 'white'} />
             </Link>
             <div className={styles.linkContainer}>
-              <Link to="/Shop" className={styles.navLink}>SHOP</Link>
-              <Link to="/Menu" className={styles.navLink}>MENU</Link>
-              <Link to="/OurRoots" className={styles.navLink}>OUR ROOTS</Link>
-              <Link to="/Visit" className={styles.navLink}>VISIT</Link>
+              <Link to="/Shop" className={props.isActive1 ? styles.activeNavLink : styles.navLink}>SHOP</Link>
+              <Link to="/Menu" className={props.isActive2 ? styles.activeNavLink : styles.navLink}>MENU</Link>
+              <Link to="/OurRoots" className={props.isActive3 ? styles.activeNavLink : styles.navLink}>OUR ROOTS</Link>
+              <Link to="/Visit" className={props.isActive4 ? styles.activeNavLink : styles.navLink}>VISIT</Link>
             </div>
             <div className={styles.buttonContainer}>
                 <span className={styles.navCartContainer}>

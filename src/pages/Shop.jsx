@@ -1,19 +1,32 @@
 import styles from '../styles/Shop.module.css';
 import Navbar from '../components/Navbar';
-import Products from '../Products';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import products from '../Products';
 import PageChange from '../components/PageChange';
 
 const Shop = () => {
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  }, []);
+  const [playAnimation, setPlayAnimation] = useState(false);
+    
+    useEffect(() => {
+      window.scrollTo(0,0);
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
 
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
 
   return (
     <>
-    <Navbar />
+    <PageChange pageLoaded={playAnimation} />
+    <Navbar isActive1={true} />
     <section className={styles.shopSection}>
         <div className={styles.heading}>
             <h1 className={styles.title}>WORLD-FAMOUS BBQ SAUCE</h1>
@@ -21,14 +34,15 @@ const Shop = () => {
         </div>
 
         <div className={styles.productContainer}>
-          { Products.map((details) => {
+          { products.map((products) => {
             return (
-            <div className={styles.card} key={details.id}>
+            <div className={styles.card} key={products.id}>
               <div className={styles.imageContainer}>
-                <img src={details.image} alt="sauce-bottle" className={styles.image} />
+                <img src={products.image} alt="sauce-bottle" className={styles.image} />
+                
               </div>
-              <h3 className={styles.product}>{details.product}</h3>
-              <span className={styles.price}>{details.price}</span>
+              <h3 className={styles.product}>{products.name}</h3>
+              <span className={styles.price}>{products.price}</span>
             </div>
             )
             })

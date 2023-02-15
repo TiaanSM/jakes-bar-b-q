@@ -1,16 +1,31 @@
 import styles from '../styles/OurRoots.module.css';
 import Navbar from '../components/Navbar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import PageChange from '../components/PageChange';
 
 const OurRoots = () => {
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  }, []);
+  const [playAnimation, setPlayAnimation] = useState(false);
+    
+    useEffect(() => {
+      window.scrollTo(0,0);
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
+
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
 
   return (
     <>
-    <Navbar />
+    <PageChange pageLoaded={playAnimation} />
+    <Navbar isActive3={true} />
     <section className={styles.outRootsSection}>
         <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/jason-briscoe-hsrnbwfQXw0-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373637330" 
         alt="fire-wood-start" className={styles.image} />

@@ -1,17 +1,31 @@
 import styles from '../styles/Menu.module.css';
 import Navbar from '../components/Navbar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import PageChange from '../components/PageChange';
 
 const Menu = () => {
 
+    const [playAnimation, setPlayAnimation] = useState(false);
+    
     useEffect(() => {
       window.scrollTo(0,0);
-    }, []);
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
 
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
 
     return (
     <>
-    <Navbar />
+    <PageChange pageLoaded={playAnimation} />
+    <Navbar isActive2={true} />
         <section className={styles.menuSection}>
 
             <img src="https://ik.imagekit.io/x29dtqzji/BBQ_Website/tr:w-1900/pexels-calvin-lee-9967252.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676373638381" 

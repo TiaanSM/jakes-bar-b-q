@@ -130,6 +130,15 @@
     color: #f3f2ee;
     font-family: 'Anton', sans-serif;
 }
+.activeNavLink {
+    text-decoration: none;
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #f3f2ee;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+}
 
 .buttonContainer {
     width: 19rem;

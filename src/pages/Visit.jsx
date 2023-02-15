@@ -1,16 +1,31 @@
 import styles from '../styles/Visit.module.css';
 import Navbar from '../components/Navbar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import PageChange from '../components/PageChange';
 
 const Visit = () => {
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  }, []);
+  const [playAnimation, setPlayAnimation] = useState(false);
+    
+    useEffect(() => {
+      window.scrollTo(0,0);
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
+
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+    }, []);
 
   return (
     <>
-    <Navbar />
+    <PageChange pageLoaded={playAnimation} />
+    <Navbar isActive4={true} />
     <section className={styles.visitSection}>
 
       <div className={styles.mainContainer}>
