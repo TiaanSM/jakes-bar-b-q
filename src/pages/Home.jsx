@@ -2,33 +2,14 @@ import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { useEffect, useState } from 'react';
 import PageChange from '../components/PageChange';
 
 const Home = () => {
-    
-    const [playAnimation, setPlayAnimation] = useState(false);
-
-    
-    useEffect(() => {
-      window.scrollTo(0,0);
-    const onPageLoad = () => {
-      setPlayAnimation(true);
-    };
-
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-    }, []);
 
   return (
   <>
-  <PageChange pageLoaded={playAnimation} />
-  <Navbar />
+    <PageChange />
+    <Navbar />
     <main className={styles.home}>
 
       <header className={styles.header}>
