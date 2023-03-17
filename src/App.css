@@ -18,21 +18,19 @@ font-family: 'Roboto Condensed', sans-serif;
 .pageChangeStart {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     background-color: #fddfb4;
     transition: all 1s ease;
-    opacity: 1;
 }
 .pageChangeFinish {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: -100vh;
     left: 0;
-    opacity: 0.9;
     z-index: 1000;
     background-color: #fddfb4;
     transition: all 1s ease;
